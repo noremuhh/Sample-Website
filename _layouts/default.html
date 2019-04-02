@@ -1,46 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <title>{{site.title}}</title>
+<html>
 
-<!-- Styling -->
-    <link rel="stylesheet" href="css/styles.css">
+  {% include head.html %}
 
-</head>
-<body>
 
-<!-- Header -->
-<header>
-    <h1><a href="{{site.url}}">{{site.title}}</a></h1>
-    
-    <nav>
-        <a href="/">Home</a>
-        <a href="listing.html">Listing</a>
-        <a href="about.html">About</a>
-    </nav>
-    
-</header>
+    <body id="page-top" class="index">
 
-<!-- Homepage Content -->
-<article>
-    
-    {{content}}
-    
+    {% include header.html %}
+    {% include services.html %}
+    {% include portfolio_grid.html %}
+    {% include about.html %}
+    {% include team.html %}
+    {% include clients.html %}
+    {% include contact.html %}
+    {% include footer.html %}
+    {% include modals.html %}
+    {% include js.html %}
 
-</article>
-    
-<!-- Footer -->
-<footer>
-    <p>&copy; Copyright <span>YEAR</span></p>
-</footer>
-
-<!-- Scripts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/scripts.js"></script>
-
-</body>
+    </body>
 </html>
